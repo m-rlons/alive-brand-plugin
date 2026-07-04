@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "truly-alive-plugins",
+  "version": "1.0.0",
+  "description": "ALIVE's own plugin marketplace — brand genome and studio tools for the team, installable on any personal Claude.",
+  "owner": {
+    "name": "ALIVE",
+    "email": "hello@alive.inc"
+  },
+  "plugins": [
+    {
+      "name": "alive-brand",
+      "description": "ALIVE's brand genome — kernel invariants + the six-step method for building on-brand documents, decks, and visual work anywhere.",
+      "version": "1.0.0",
+      "source": "./alive-brand",
+      "category": "design"
+    }
+  ]
+}
