@@ -1,0 +1,69 @@
+{
+  "$description": "ALIVE brand kernel — the DNA as data. Hand-authored source of truth for the NEW brand (post-genome, 2026-07-03). Expressions (expressions/*.json) map these onto a shared CSS contract. Human canon: /brand/standards.md",
+  "version": "2.0",
+  "color": {
+    "$description": "OUR palette. Cool field always (K3). Carrier = the red family, one per view, semantically loaded (K2).",
+    "paper": {
+      "ice": { "$value": "#f0f1ed", "$description": "cold print paper — Transmission field" },
+      "rhodium": { "$value": "#f1f2f4", "$description": "polished cold paper — Dial field" },
+      "gallery": { "$value": "#eceef0", "$description": "gallery wall white — Showroom field" }
+    },
+    "metal": {
+      "rhodium": { "$value": "#c9cdd3" },
+      "steel": { "$value": "#8b9198" },
+      "chrome": { "$value": "conic-gradient(from 210deg,#f2f4f6,#7e858d 32%,#e6eaee 55%,#565c63 78%,#f2f4f6)", "$description": "the mirror — bearings, chrome text" }
+    },
+    "dark": {
+      "onyx": { "$value": "#0a0b0d", "$description": "Dial at night" },
+      "graphite": { "$value": "#141518", "$description": "Showroom lights-down / motion room" },
+      "negative": { "$value": "#101626", "$description": "Transmission photostat field" }
+    },
+    "ink": {
+      "navy": { "$value": "#131a2c", "$description": "document ink" },
+      "zinc": { "$value": "#16181c", "$description": "instrument ink" },
+      "lume": { "$value": "#dfe8ec", "$description": "night numerals — cool, never warm" }
+    },
+    "carrier": {
+      "$description": "What red IS must be decided per expression: a needle, a room, a seal. Never two saturated elements in one view.",
+      "oxblood": { "$value": "#6b1420", "$description": "the seconds hand" },
+      "oxblood-deep": { "$value": "#451017", "$description": "the room" },
+      "stamp": { "$value": "#7a1c22", "$description": "the seal" },
+      "signal": { "$value": "#b3241c", "$description": "the one room allowed to shout" },
+      "night-ox": { "$value": "#a02536", "$description": "carrier under lights-off" }
+    }
+  },
+  "motion": {
+    "$description": "Machined physics (K4). Fixed across ALL expressions; only the metaphor voicing varies (crown click / bearing roll / stamp thunk).",
+    "cut": { "duration": "1ms", "easing": "steps(1)" },
+    "tick": { "duration": "120ms", "easing": "cubic-bezier(.4, 0, .15, 1)" },
+    "seat": { "duration": "180ms", "easing": "cubic-bezier(.3, 0, 0, 1)" },
+    "sweep": { "duration": "400ms", "easing": "cubic-bezier(.6, 0, .2, 1)", "$description": "max one per surface" },
+    "forbidden": ["bounce", "blur-fade", "drift", "linear tweens outside continuous rotation", "wobble after landing"]
+  },
+  "type": {
+    "$description": "Argued faces only (K5). Slots are cast per expression; every face carries its why.",
+    "slots": ["display", "working", "code"],
+    "registry": {
+      "Marcellus": { "source": "google", "why": "Roman inscriptional capitals — the case-back engraving" },
+      "B612": { "source": "google", "why": "Commissioned by Airbus for cockpit displays; legibility certified where misreading kills" },
+      "B612 Mono": { "source": "google", "why": "The same certification, fixed-pitch" },
+      "Anybody": { "source": "google", "axes": "wdth 50–150, wght 100–900", "why": "Chrome-stretch supergraphics; the width axis is the material" },
+      "Archivo": { "source": "google", "axes": "wdth 62–125", "why": "Built for archives and highlighting — the gallery didactic" },
+      "Fragment Mono": { "source": "google", "why": "Helvetica gone monospace — chrome-cool plate numbers" },
+      "Redaction": { "source": "/brand/fonts/Redaction-*.woff2", "license": "OFL", "grades": [100, 50, 20, 0], "why": "Kaphar/Betts/MCKL, MoMA PS1 — the legal system's erasure as type; grades are the loading language" },
+      "Karrik": { "source": "/brand/fonts/Karrik-*.woff2", "license": "OFL", "why": "Velvetyne — tribute to nameless dead foundries; vernacular, uncorrected" },
+      "Space Mono": { "source": "google", "why": "Colophon's space-age mono — transmission codes" }
+    },
+    "disqualified": ["Inter-class defaults", "SF-class", "the AI-startup serif of the month", "any face without a why"]
+  },
+  "laws": {
+    "$description": "Kernel invariants K1–K10, machine-checkable subset.",
+    "carrier_singularity": "exactly one saturated element per view",
+    "cool_field": "warmth only as material depth, never atmosphere",
+    "dual_hour": "night = the world with lights off, never inversion",
+    "micro_reference": "mono metadata codes present on every artifact",
+    "demo_is_exhibit": "enact laws, don't describe them",
+    "craft_placement": "AI presence + produced objects only",
+    "wow_budget": "2–3 concentrated moments per artifact"
+  }
+}

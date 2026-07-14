@@ -11,7 +11,7 @@
     {
       "name": "alive-brand",
       "description": "ALIVE's brand genome — kernel invariants + the six-step method for building on-brand documents, decks, and visual work anywhere.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": "./alive-brand",
       "category": "design"
     }

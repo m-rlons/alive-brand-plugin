@@ -1,28 +1,47 @@
 # alive-brand
 
-ALIVE's brand genome as a Claude Code skill — install it once, and any Claude
+ALIVE's brand system as a Claude Code plugin — install it once, and any Claude
 session (any project, any machine) can build on-brand ALIVE work: decks,
 one-pagers, pitch material, reports, landing pages.
 
-It fetches the live canon from `truly-alive.vercel.app` every time it runs, so
-it's never stale and needs no local files.
+The full canon (standards, tokens, kernel) ships inside the plugin. No login,
+no network, nothing else to set up.
 
-## Install
+## Install (Claude Code)
+
+Run these two commands inside Claude Code, once per machine:
 
 ```
 /plugin marketplace add m-rlons/alive-brand-plugin
 /plugin install alive-brand@truly-alive-plugins
 ```
 
-Run once per machine. After that, mention a deck, pitch, one-pager, or
-"make it look like ALIVE" in any session and the skill loads automatically.
+After that, mention a deck, pitch, one-pager, or "make it look like ALIVE" in
+any session and the skill loads automatically. To restyle something existing:
+
+> Restyle this deck as ALIVE.
+
+## No Claude Code? (claude.ai, or any other Claude)
+
+Paste this into your chat:
+
+> Fetch https://raw.githubusercontent.com/m-rlons/alive-brand-plugin/main/alive-brand/skills/alive-brand/SKILL.md
+> and follow it. The canon it references is at
+> https://raw.githubusercontent.com/m-rlons/alive-brand-plugin/main/alive-brand/skills/alive-brand/canon/standards.md
+> and .../canon/tokens.json. Then restyle: [your thing]
 
 ## What it does
 
-Reads `/brand/standards.md` (the kernel + the six-step method that births
-visual expressions) and `/brand/tokens.json` (exact values), then either
-inherits one of the three proof expressions or births a new one for your
-content — and self-judges the result against the NEVER register before
-handing it back.
+The brand has three layers, and the skill decides the layer first: the house
+(artifacts that speak AS ALIVE), the craft laws (kernel + NEVER register),
+and the engine (the method that births a fully-opinionated world for
+produced/client artifacts). It reads the bundled `canon/standards.md` and
+`canon/tokens.json`, builds, then self-judges the result against the NEVER
+register before handing it back.
 
-See `https://truly-alive.vercel.app/brand/` for the living reference.
+## Updating the canon
+
+The canon here is synced from the `truly-alive` app repo by
+`scripts/publish-brand-plugin.sh`. If you installed the plugin a while ago,
+re-run `/plugin install alive-brand@truly-alive-plugins` to pick up the
+latest.
