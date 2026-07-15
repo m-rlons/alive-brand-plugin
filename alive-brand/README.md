@@ -9,10 +9,14 @@ no network, nothing else to set up.
 
 ## Install (Claude Code)
 
-Run these two commands inside Claude Code, once per machine:
+Run these inside Claude Code — two separate commands, one at a time, once per
+machine (full HTTPS URL, so no SSH keys needed):
 
 ```
-/plugin marketplace add m-rlons/alive-brand-plugin
+/plugin marketplace add https://github.com/m-rlons/alive-brand-plugin
+```
+
+```
 /plugin install alive-brand@truly-alive-plugins
 ```
 
